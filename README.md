@@ -2,6 +2,8 @@
 
 Owlet is a Python Discord bot that connects Discord users to a locally hosted language model through an OpenAI-compatible llama.cpp API.
 
+![Owlet answering through Discord](Owlet-Discord-Example.png)
+
 The project was built as part of Operation Owl to explore local AI inference, Discord integration, access control, conversational context, and Docker-based deployment.
 
 ## Features
