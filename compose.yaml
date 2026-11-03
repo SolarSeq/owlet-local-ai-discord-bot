@@ -1,0 +1,23 @@
+services:
+  owlet:
+    build: .
+    container_name: owlet
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+      LLAMA_URL: http://owl-ai-engine:8080/v1/chat/completions
+      MODEL: owl-heretic
+
+    cpus: "0.50"
+    mem_limit: 384m
+
+    networks:
+      - owl-ai
+
+networks:
+  owl-ai:
+    external: true
+    name: owl-ai-network
